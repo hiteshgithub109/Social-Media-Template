@@ -1,0 +1,62 @@
+@media screen and (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
+
+    #mobile-navbar {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 14px 25px;
+        color: white;
+    }
+
+    #mobile-navbar>input {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    #mobile-navbar>input:checked~ .options-dropdown {
+        display: flex;
+    }
+
+    .options-dropdown {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 51px;
+        right: 0;
+        color: #3D63C1;
+        background: white;
+        padding: 0 6px;
+        width: 150px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+        z-index: 999;
+    }
+
+    .options-dropdown>a {
+        padding: 10px;
+    }
+
+    .options-dropdown>a:hover {
+        background: #dbdbdb;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left, .right, .center {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #interests, #message {
+        display: none;
+    }
+}

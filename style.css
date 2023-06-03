@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+hr {
+    width: 100%;
+    opacity: 0.15;
+    margin: 20px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.width-23 {
+    width: 23.6%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    top: 0;
+}
+
+#header::before {
+    content: '';
+    position: absolute;
+    background: #3D63C1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.logo {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    transition: .3s;
+}
+
+.logo:hover {
+    color: #3D63C1;
+    background: white;
+}
+
+#navbar {
+    display: flex;
+}
+
+#mobile-navbar {
+    display: none;
+}
+
+.navlist {
+    display: flex;
+}
+
+.nav-logo-button {
+    display: flex;
+    white-space: normal;
+    justify-content: center;
+}
+
+.logo-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+}
+
+.logo:hover .bx.bxs-bell {
+    color: #3D63C1;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 10px;
+    font-size: 12px;
+    color: #3D63C1;
+    background: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0 6px;
+}
+
+.nav-logo-button:hover .notification-badge {
+    background: #3D63C1;
+    color: white;
+    border-color: #3D63C1;
+}
+
+.nav-logo-button {
+    position: relative;
+}
+
+.nav-logo-button:hover .notification-dropdown {
+    display: block;
+}
+
+.notification-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 999;
+    width: 275px;
+}
+
+.notification-dropdown ul {
+    list-style-type: none;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.notification-dropdown li {
+    padding: 8px 16px;
+    color: black;
+    cursor: pointer;
+}
+
+.notification-dropdown li:hover {
+    background: #dbdbdb;
+}
+
+.profile {
+    padding: 12px 24px;
+    position: absolute;
+    right: 0;
+}
+
+.profile-button>img {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+}
+
+.profile:hover {
+    background: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.content {
+    display: flex;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 25%;
+}
+
+.center {
+    width: 58.25%;
+}
+
+.right {
+    width: 16.75%;
+}
+
+#my-profile>h2 {
+    margin: 10px;
+}
+
+#my-profile>#profile-pic {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+}
+
+#my-profile>.card-p {
+    width: 90%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.836);
+    margin: 10px;
+}
+
+#my-profile i {
+    color: #3D63C1;
+}
+
+#my-feeds {
+    padding: 0;
+}
+
+#my-feeds>button {
+    padding: 0 5%;
+    height: 40px;
+    text-align: left;
+    background: #3D63C1E5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+#my-feeds>button:hover {
+    background: white;
+    color: #3D63C1E5;
+}
+
+#interests>p {
+    margin: 15px 0;
+    width: 100%;
+}
+
+#interests>p>span {
+    font-size: 12px;
+    background: #3D63C1;
+    padding: 0 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#interests>p>span.light {
+    background: #2e68ff;
+    ;
+}
+
+#interests>p>span.lighter {
+    background: #5580eee5;
+}
+
+#message {
+    background: #DFE5E8;
+    margin-bottom: 30px;
+}
+
+#cancel-button {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    border-top-right-radius: 25%;
+    padding: 0 15px;
+    background: #BECBD2;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#cancel-button:hover {
+    background: #636c707d;
+}
+
+#message>p {
+    margin: 15px;
+}
+
+#message>p {
+    width: 100%;
+    text-align: left;
+}
+
+.center-container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#status {
+    width: 100%;
+    align-items: flex-start;
+    border-radius: 0;
+}
+
+#status>input {
+    width: 100%;
+    height: 40px;
+    padding: inherit;
+    font-size: 15px;
+}
+
+#status>h4 {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+#status>input:focus-visible {
+    outline: none;
+}
+
+.center button,
+.upcoming-events button {
+    background: #3D63C1;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.center button:hover,
+.upcoming-events button:hover {
+    background: #3D63C13B;
+    color: #3D63C1;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.posts {
+    align-items: flex-start;
+    border-radius: 0;
+}
+
+.posts-head {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.posts-head img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.posts-head>p {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    opacity: 0.5;
+}
+
+.posts-content-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-content-images>div {
+    width: 50%;
+    padding: 8px;
+}
+
+.friend-requests>img {
+    width: 50%;
+}
+
+.accept-reject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 15px 0;
+}
+
+.accept-reject div:nth-child(1) {
+    width: 50%;
+    text-align: center;
+    background: #93ce95;
+    padding: 5px 0;
+}
+
+.accept-reject div:nth-child(2) {
+    width: 50%;
+    text-align: center;
+    background: #f88d86;
+    padding: 5px 0;
+}
+
+.accept-reject div:hover {
+    background: #3D63C13B;
+    color: #3D63C1;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.ads, .bugs {
+    display: inherit;
+    height: 85px;
+}
+
+#footer {
+    background-color: #3D63C1;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    background: white;
+    color: #3D63C1;
+}

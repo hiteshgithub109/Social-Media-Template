@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Social Media Template</title>
+</head>
+
+<body>
+    <div id="header" class="width-100">
+        <a href="#" class="logo">
+            <i class='bx bxs-home margin-right-10'></i>Logo
+        </a>
+        <nav id="navbar">
+            <a href="#" class="logo" title="News"><i class="fa-solid fa-earth-asia"></i></a>
+            <a href="#" class="logo" title="Account Settings"><i class='bx bxs-user'></i></a>
+            <a href="#" class="logo" title="Messages"><i class='bx bxs-envelope'></i></a>
+            <div class="logo nav-logo-button">
+                <button class=logo-button>
+                    <i class='bx bxs-bell'></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <div class="notification-dropdown">
+                    <ul>
+                        <li>One New friend request</li>
+                        <li>Jhon Doe posted on your wall</li>
+                        <li>Jane likes your photo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile" title='My Account'>
+                <a href="#" class="profile-button">
+                    <img src="images/avatar2.png" alt="">
+                </a>
+            </div>
+        </nav>
+        <div id="mobile-navbar">
+            <i class="fa-solid fa-bars"></i>
+            <input type="checkbox" name="" id="">
+            <div class="options-dropdown">
+                <a href="#">News</a>
+                <a href="#">Account Settings</a>
+                <a href="#">Messages</a>
+                <a href="#">Notifications</a>
+            </div>
+        </input>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 80px;">
+        <div class="content">
+            <div class="left content-container">
+                <div id="my-profile" class="card container">
+                    <h2>My Profile</h2>
+                    <img src="images/avatar3.png" alt="" id="profile-pic">
+                    <hr>
+                    <p class="card-p"><i class='bx bxs-pencil margin-right-20'></i>Designer, UI</p>
+                    <p class="card-p"><i class="fa-solid fa-location-dot margin-right-20"></i>Mumbai, India</p>
+                    <p class="card-p"><i class='bx bxs-cake margin-right-20'></i>31 March, 2004</p>
+                </div>
+
+                <div id="my-feeds" class="card container margin-top-30">
+                    <button class="width-100"><i class="fa-solid fa-circle-notch margin-right-20"></i> My
+                        Groups</button>
+                    <button class="width-100"><i class='bx bxs-calendar-event margin-right-20'></i>My Events</button>
+                    <button class="width-100"><i class='bx bxs-photo-album margin-right-20'></i>My Photos</button>
+                </div>
+
+                <div id="interests" class="card container margin-top-30">
+                    <p>Interests</p>
+                    <p>
+                        <span>News</span> <span>W3Schools</span> <span>Labels</span> <span>Games</span> <span
+                            class="light">Friends</span> <span class="light">Games</span> <span
+                            class="light">Friends</span> <span class="light">Food</span> <span
+                            class="lighter">Design</span> <span class="lighter">Art</span> <span
+                            class="lighter">Photos</span>
+                    </p>
+                </div>
+
+                <div id="message" class="card container margin-top-30">
+                    <span id="cancel-button" onclick="this.parentElement.style.display = 'none'">
+                        <i class='bx bx-x'></i>
+                    </span>
+                    <p>
+                        <strong>Hey!</strong>
+                    </p>
+                    <p>
+                        People are looking at your profile. Find out who.
+                    </p>
+                </div>
+            </div>
+
+            <div class="center content-container container">
+                <div id="status" class="card container">
+                    <h4 class="margin-top-15">Social Media template by w3.css</h4>
+                    <input type="text" class="margin-top-15" placeholder="Status: Feeling Blue" autocomplete="off">
+                    <button class="margin-top-15"><i class='bx bxs-send margin-right-10'></i>Post</button>
+                </div>
+
+                <div class="posts card container margin-top-30">
+                    <div class="posts-head margin-top-15">
+                        <img src="images/avatar2.png" alt="" class="margin-right-10">
+                        <h2>Jhon Doe</h2>
+                        <p>1 min</p>
+                    </div>
+
+                    <hr class="margin-top-15">
+
+                    <div class="posts-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate eos, ipsum omnis ipsa
+                            aspernatur, amet quaerat sed repellat inventore ullam quibusdam eveniet modi accusantium!
+                            Neque itaque nulla est eligendi perferendis?</p>
+                        <div class="posts-content-images margin-top-15 width-100">
+                            <div><img src="images/lights.jpg" alt="" class="width-100"></div>
+                            <div><img src="images/nature.jpg" alt="" class="width-100"></div>
+                        </div>
+                    </div>
+
+                    <div class="posts-foot margin-top-15">
+                        <button><i class='bx bxs-like margin-right-10'></i>Like</button>
+                        <button><i class='bx bxs-comment-minus margin-right-10'></i>Comment</button>
+                    </div>
+                </div>
+
+                <div class="posts card container margin-top-30">
+                    <div class="posts-head margin-top-15">
+                        <img src="images/avatar5.png" alt="" class="margin-right-10">
+                        <h2>Jane Doe</h2>
+                        <p>16 min</p>
+                    </div>
+
+                    <hr class="margin-top-15">
+
+                    <div class="posts-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate eos, ipsum omnis ipsa
+                            aspernatur, amet quaerat sed repellat inventore ullam quibusdam eveniet modi accusantium!
+                            Neque itaque nulla est eligendi perferendis?</p>
+                    </div>
+
+                    <div class="posts-foot margin-top-15">
+                        <button><i class='bx bxs-like margin-right-10'></i>Like</button>
+                        <button><i class='bx bxs-comment-minus margin-right-10'></i>Comment</button>
+                    </div>
+                </div>
+
+                <div class="posts card container margin-top-30">
+                    <div class="posts-head margin-top-15">
+                        <img src="images/avatar2.png" alt="" class="margin-right-10">
+                        <h2>Angie Jane</h2>
+                        <p>32 min</p>
+                    </div>
+
+                    <hr class="margin-top-15">
+
+                    <div class="posts-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate eos, ipsum omnis ipsa
+                            aspernatur, amet quaerat sed repellat inventore ullam quibusdam eveniet modi accusantium!
+                            Neque itaque nulla est eligendi perferendis?</p>
+                        <div class="posts-content-images margin-top-15">
+                            <img src="images/nature.jpg" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+
+                    <div class="posts-foot margin-top-15">
+                        <button><i class='bx bxs-like margin-right-10'></i>Like</button>
+                        <button><i class='bx bxs-comment-minus margin-right-10'></i>Comment</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right content-container">
+                <div class="upcoming-events container card">
+                    <p class="margin-top-15" style="font-weight: normal;">Upcoming Events: </p>
+                    <img src="images/forest.jpg" alt="" class="margin-top-15 width-100">
+                    <h4 class="margin-top-15">Holiday</h4>
+                    <p class="margin-top-15">Friday 3:00pm</p>
+                    <button class="margin-top-15 width-100">Info</button>
+                </div>
+
+                <div class="friend-requests container card margin-top-15">
+                    <p class="margin-top-15" style="font-weight: normal;">Friend Request </p>
+                    <img src="images/avatar6.png" alt="" class="margin-top-15">
+                    <h4>Jane Doe</h4>
+                    <div class="accept-reject width-100">
+                        <div><i class="fa-solid fa-check"></i></div>
+                        <div><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                    </div>
+                </div>
+
+                <div class="ads container card margin-top-30">
+                    <p><strong>ADS</strong></p>
+                </div>
+
+                <div class="bugs container card margin-top-30">
+                    <p><i class="fa-solid fa-bug"></i></p>
+                    <p><strong>Bugs</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="margin-top-30">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">About</a><a href="#">Help Center</a><a href="#">Terms of Service</a><a href="#">Privacy
+                    Policy</a><a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
